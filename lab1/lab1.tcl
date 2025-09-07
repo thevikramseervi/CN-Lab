@@ -35,7 +35,7 @@ $ns duplex-link-op $n0 $n1 orient right
 $ns duplex-link-op $n1 $n2 orient right
 
 set udp0 [new Agent/UDP]
-$ns attach-agent $n0 $udp0
+$ns attach-agent $n1 $udp0
 
 set cbr0 [new Application/Traffic/CBR]
 $cbr0 attach-agent $udp0
